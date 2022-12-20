@@ -1,4 +1,10 @@
-.triangle-bg{
-    background: linear-gradient(120deg, #F0DBDB 0%, #F0DBDB 50%, #FEFCF3 50%);
-    z-index: -1;
+@import "/src/styles.scss";
+.triangle-bg {
+  background: linear-gradient(
+    120deg,
+    $primary-accent-color 0%,
+    $primary-accent-color 50%,
+    $base-color 50%
+  );
+  z-index: -1;
 }

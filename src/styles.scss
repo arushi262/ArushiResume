@@ -1,7 +1,11 @@
+$base-color: #fefcf3;
+$primary-accent-color: #f0dbdb;
+$secondary-accent-color: black;
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap");
+
 body {
-  background-color: #fefcf3;
+  background-color: $base-color;
   font-family: "Martian Mono", monospace;
 }

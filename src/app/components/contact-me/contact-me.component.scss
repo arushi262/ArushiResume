@@ -1,13 +1,14 @@
+@import "/src/styles.scss";
 .btn {
   border-radius: 23px;
-  background-color: #f0dbdb;
+  background-color: $primary-accent-color;
 }
 .card {
-  background-color: #fefcf3;
+  background-color: $base-color;
 }
 .form-input {
-  background-color: #fefcf3;
-  border-bottom: 3px solid #f0dbdb;
+  background-color: $base-color;
+  border-bottom: 3px solid $primary-accent-color;
   border-top: none;
   border-left: none;
   border-right: none;
