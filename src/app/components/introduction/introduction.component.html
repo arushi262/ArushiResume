@@ -1,42 +1,68 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-8">
-      <nav class="nav mt-5 pt-5 mx-5 px-5">
-        <a class="nav-link fw-bold" aria-current="page" href="#">About me</a>
-        <a class="nav-link fw-bold" href="#">Portfolio</a>
-        <a class="nav-link fw-bold" href="#">Contact</a>
-      </nav>
-    </div>
-    <div class="col-4 mt-5 brand display-1">A.</div>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player
-        src="https://assets6.lottiefiles.com/packages/lf20_X3W3p05wuf.json"
-        background="transparent"
-        speed="1"
-        style="width: 50vw; height: 80vh"
-        loop
-        autoplay
-      ></lottie-player>
-    </div>
-    <div class="col-6 mt-5 pt-5 px-5">
-      <div class="display-4">Hi!</div>
-      <div class="display-4 brand pb-2">I'm Arushi</div>
-      <h4 class="pt-2">Graduate Student, Software Developer</h4>
-      <h4>and an aspiring data analyst.</h4>
-      <h4 class="pt-2">
-        currently pursuing Master's in Management Sciences at the University of
-        Waterloo.
-      </h4>
-      <!--<div class="hidden">
-        <h3>Well versed with different frameworks for frontend</h3>
-        <h3>and backend development along with exposure to data analytics.</h3>
-        <button type="submit" class="btn fw-bold mt-5 px-3">see my work</button>
-      </div>-->
-
-      <button type="submit" class="btn fw-bold mt-5 px-3">contact me</button>
-    </div>
-  </div>
+<nav class="navbar navbar-expand-md bg-transparent mt-md-5 pt-5">
+	<div class="container d-flex flex-md-row-reverse justify-content-between">
+		<a class="navbar-brand m-0 p-0" href="/"><p class="display-1 m-0">A.</p></a>
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#toggleNav"
+			aria-controls="toggleNav"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="toggleNav">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link fw-bold" aria-current="page" href="#intro">About me</a>
+				<a class="nav-item nav-link fw-bold" href="#timeline">Portfolio</a>
+				<a class="nav-item nav-link fw-bold" href="#contact">Contact</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid h-100">
+	<div class="row h-100">
+		<div class="col-12 col-md-6 p-1 p-md-3 p-lg-5">
+			<div>
+				<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+				<lottie-player
+					src="https://assets6.lottiefiles.com/packages/lf20_X3W3p05wuf.json"
+					background="transparent"
+					speed="1"
+					loop
+					autoplay
+				></lottie-player>
+			</div>
+		</div>
+		<div class="col-12 col-md-6 flex-fill align-self-md-center intro-text">
+			<div class="display-4">Hi!</div>
+			<div class="display-4 brand pb-2">I'm Arushi</div>
+			<p class="h5">Graduate Student, Software Developer</p>
+			<div class="carousel slide" id="introCarousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<p class="h5">and an aspiring data analyst.</p>
+						<p class="h5">Currently pursuing Master's in Management Sciences at the University of Waterloo.</p>
+						<a class="btn fw-bold mt-4 px-3" href="#contact">contact me</a>
+					</div>
+					<div class="carousel-item">
+						<p class="h5">Well versed with different frameworks for frontend</p>
+						<p class="h5">and backend development along with exposure to data analytics.</p>
+						<a class="btn fw-bold mt-4 px-3" href="#timeline">see my work</a>
+					</div>
+				</div>
+			</div>
+			<div class="mt-2 text-center">
+				<button
+					data-bs-target="#introCarousel"
+					data-bs-slide-to="0"
+					aria-label="Intro"
+					class="btn btn-transparent border-0 active mx-2"
+					aria-current="true"
+				></button>
+				<button data-bs-target="#introCarousel" data-bs-slide-to="1" aria-label="Work" class="btn btn-transparent border-0 mx-2"></button>
+			</div>
+		</div>
+	</div>
 </div>
