@@ -1,18 +1,19 @@
+@import "/src/styles.scss";
 @media only screen and (max-width: 600px) {
 	.triangle-bg {
-		background: linear-gradient(#f0dbdb 0%, #f0dbdb 45%, #fefcf3 45%);
+		background: linear-gradient($primary-accent-color 0%, $primary-accent-color 45%, $base-color 45%);
 	}
 	.inv-triangle-bg {
-		background: linear-gradient(#fefcf3 0%, #fefcf3 55%, #f0dbdb 55%);
+		background: linear-gradient($base-color 0%, $base-color 55%, $primary-accent-color 55%);
 	}
 }
 
 @media only screen and (min-width: 601px) {
 	.triangle-bg {
-		background: linear-gradient(120deg, #f0dbdb 0%, #f0dbdb 45%, #fefcf3 45%);
+		background: linear-gradient(120deg, $primary-accent-color 0%, $primary-accent-color 45%, $base-color 45%);
 	}
 	.inv-triangle-bg {
-		background: linear-gradient(120deg, #fefcf3 0%, #fefcf3 55%, #f0dbdb 55%);
+		background: linear-gradient(120deg, $base-color 0%, $base-color 55%, $primary-accent-color 55%);
 	}
 }
 
