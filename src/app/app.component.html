@@ -1,22 +1,26 @@
-<div
-  class="container m-0 p-0 position-absolute top-0 start-0 vw-100 vh-100 triangle-bg"
-></div>
-
 <div class="container-fluid">
-  <div class="row vh-100">
-    <div class="col">
-      <app-introduction></app-introduction>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <app-timeline></app-timeline>
-    </div>
-  </div>
-  <div class="row vh-100">
-    <div class="col">
-      <app-contact-me></app-contact-me>
-    </div>
-    <app-footer></app-footer>
-  </div>
+	<div class="row min-vh-100 triangle-bg" id="intro">
+		<div class="col">
+			<app-introduction></app-introduction>
+		</div>
+	</div>
+	<div class="row min-vh-100" id="timeline">
+		<div class="col">
+			<app-timeline></app-timeline>
+		</div>
+	</div>
+	<div class="row min-vh-100 inv-triangle-bg" id="contact">
+		<div class="container-fluid d-flex flex-column justify-content-evenly">
+			<div class="row">
+				<div class="col">
+					<app-contact-me></app-contact-me>
+				</div>
+			</div>
+			<div class="row" id="footer">
+				<div class="col">
+					<app-footer></app-footer>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

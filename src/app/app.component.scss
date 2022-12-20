@@ -1,4 +1,21 @@
-.triangle-bg{
-    background: linear-gradient(120deg, #F0DBDB 0%, #F0DBDB 50%, #FEFCF3 50%);
-    z-index: -1;
+@media only screen and (max-width: 600px) {
+	.triangle-bg {
+		background: linear-gradient(#f0dbdb 0%, #f0dbdb 45%, #fefcf3 45%);
+	}
+	.inv-triangle-bg {
+		background: linear-gradient(#fefcf3 0%, #fefcf3 55%, #f0dbdb 55%);
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.triangle-bg {
+		background: linear-gradient(120deg, #f0dbdb 0%, #f0dbdb 45%, #fefcf3 45%);
+	}
+	.inv-triangle-bg {
+		background: linear-gradient(120deg, #fefcf3 0%, #fefcf3 55%, #f0dbdb 55%);
+	}
+}
+
+.triangle-bg .inv-triangle-bg {
+	z-index: -1;
 }
