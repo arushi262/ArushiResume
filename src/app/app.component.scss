@@ -1,22 +1,40 @@
-@import "/src/styles.scss";
+@import "/src/variables.scss";
 @media only screen and (max-width: 600px) {
-	.triangle-bg {
-		background: linear-gradient($primary-accent-color 0%, $primary-accent-color 45%, $base-color 45%);
-	}
-	.inv-triangle-bg {
-		background: linear-gradient($base-color 0%, $base-color 55%, $primary-accent-color 55%);
-	}
+  .triangle-bg {
+    background: linear-gradient(
+      $primary-accent-color 0%,
+      $primary-accent-color 45%,
+      $base-color 45%
+    );
+  }
+  .inv-triangle-bg {
+    background: linear-gradient(
+      $base-color 0%,
+      $base-color 55%,
+      $primary-accent-color 55%
+    );
+  }
 }
 
 @media only screen and (min-width: 601px) {
-	.triangle-bg {
-		background: linear-gradient(120deg, $primary-accent-color 0%, $primary-accent-color 45%, $base-color 45%);
-	}
-	.inv-triangle-bg {
-		background: linear-gradient(120deg, $base-color 0%, $base-color 55%, $primary-accent-color 55%);
-	}
+  .triangle-bg {
+    background: linear-gradient(
+      120deg,
+      $primary-accent-color 0%,
+      $primary-accent-color 45%,
+      $base-color 45%
+    );
+  }
+  .inv-triangle-bg {
+    background: linear-gradient(
+      120deg,
+      $base-color 0%,
+      $base-color 55%,
+      $primary-accent-color 55%
+    );
+  }
 }
 
 .triangle-bg .inv-triangle-bg {
-	z-index: -1;
+  z-index: -1;
 }

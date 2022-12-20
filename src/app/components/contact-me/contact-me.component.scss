@@ -1,15 +1,15 @@
-@import "/src/styles.scss";
+@import "/src/variables.scss";
 .btn {
-	border-radius: 23px;
-	background-color: $primary-accent-color;
+  border-radius: 23px;
+  background-color: $primary-accent-color;
 }
 .card {
-	background-color: $base-color;
+  background-color: $base-color;
 }
 .form-input {
-	background-color: $base-color;
-	border-bottom: 3px solid $primary-accent-color;
-	border-top: none;
-	border-left: none;
-	border-right: none;
+  background-color: $base-color;
+  border-bottom: 3px solid $primary-accent-color;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
