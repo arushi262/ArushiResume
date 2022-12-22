@@ -16,7 +16,11 @@
   color: $secondary-accent-color;
 }
 
-.btn {
+.btn-slider {
   border-radius: 23px;
   background-color: $primary-accent-color;
+}
+
+.btn-slider-control {
+  background-color: $secondary-accent-color;
 }
