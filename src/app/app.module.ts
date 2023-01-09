@@ -6,6 +6,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { EducationTimelineModule } from './components/timeline/education-timeline/education-timeline.module';
 import { ExperienceTimelineModule } from './components/timeline/experience-timeline/experience-timeline.module';
+import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -19,10 +20,11 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     EducationTimelineModule,
-    ExperienceTimelineModule
+    ExperienceTimelineModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
