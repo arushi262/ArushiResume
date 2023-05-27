@@ -6,8 +6,8 @@
       <div class="card shadow p-3 mb-5 border-0 rounded">
         <div class="card-body">
           <form
-            #contactForm="ngForm"
-            (ngSubmit)="SubmitMessage(contactForm.value)"
+            action="https://mailthis.to/thakurarushi2@gmail.com"
+            method="POST"
           >
             <div class="row">
               <div class="col-6">
@@ -17,7 +17,6 @@
                     type="text"
                     class="form-input form-control"
                     name="name"
-                    ngModel
                   />
                 </div>
               </div>
@@ -28,9 +27,8 @@
                   >
                   <input
                     type="email"
+                    name="_replyto"
                     class="form-input form-control"
-                    name="inputEmail"
-                    ngModel
                   />
                 </div>
               </div>
@@ -38,15 +36,15 @@
             <div class="row">
               <div class="mb-3">
                 <label for="message" class="form-label fw-bold">Message</label>
-                <input
+                <textarea
                   type="text"
                   class="form-input form-control"
                   name="message"
                   ngModel
-                />
+                ></textarea>
               </div>
             </div>
-            <button type="submit" class="btn fw-bold">send</button>
+            <input type="submit" value="Send" class="btn fw-bold" />
           </form>
         </div>
       </div>
