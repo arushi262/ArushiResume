@@ -1,0 +1,28 @@
+{
+  "experience": [
+    {
+      "employer": "Fidelity Investments",
+      "designation": "Student, Emerging Technologies",
+      "duration": "May 2023 - Present",
+      "skills": ["NLP", "Python", "Power Automate"]
+    },
+    {
+      "employer": "Fidelity International",
+      "designation": "Programmer",
+      "duration": "2020 - 2022",
+      "skills": ["Tableau", "Angular", "Python", "NLP"]
+    },
+    {
+      "employer": "Fidelity International",
+      "designation": "Intern - Innovation  Lab",
+      "duration": "Summer 2019",
+      "skills": ["Blockchain", "Augmented Reality"]
+    },
+    {
+      "employer": "Sun Works",
+      "designation": "NLP Intern",
+      "duration": "Summer 2018",
+      "skills": ["NLP", "Data Preprocessing"]
+    }
+  ]
+}

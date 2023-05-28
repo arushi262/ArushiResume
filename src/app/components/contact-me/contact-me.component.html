@@ -6,6 +6,7 @@
       <div class="card shadow p-3 mb-5 border-0 rounded">
         <div class="card-body">
           <form
+            #form
             action="https://mailthis.to/thakurarushi2@gmail.com"
             method="POST"
           >
@@ -44,7 +45,12 @@
                 ></textarea>
               </div>
             </div>
-            <input type="submit" value="Send" class="btn fw-bold" />
+            <input
+              type="submit"
+              value="Send"
+              class="btn fw-bold"
+              (click)="form.submit()"
+            />
           </form>
         </div>
       </div>
